@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontak - Belajar Arab Online</title>
+<link rel="stylesheet" href="contact.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script>
+    function kirimPesan() {
+        alert("Pesan Anda terkirim. Terima kasih!");
+    }
+</script>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-envelope"></i> Kontak - Belajar Arab Online</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang</a></li>
+            <li><a href="fitur.html">Fitur</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+    </nav>
+    </header>
+
+<main>
+    <section class="formulir">
+        <h2>Formulir Pendaftaran</h2>
+        <form onsubmit="kirimPesan(); return false;">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="minat">Minat Belajar:</label>
+        <select id="minat" name="minat" required>
+            <option value="">-- Pilih --</option>
+            <option value="Nahwu">Nahwu</option>
+            <option value="Shorof">Shorof</option>
+            <option value="Kosa Kata">Kosa Kata</option>
+            <option value="Terjemah">Terjemah</option>
+        </select>
+
+        <button type="submit">Kirim</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p><i class="fas fa-star-and-crescent"></i> © 2025 Belajar Arab Online - Semua Hak Dilindungi</p>
+</footer>
+</body>
+</html>

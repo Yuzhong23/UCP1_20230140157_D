@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Belajar Arab Online</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    
+    <header>
+        <h1><i class="fas fa-moon"></i> Belajar Arab Online</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="fitur.html">Fitur</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Selamat Datang di Belajar Arab Online</h2>
+            <p>Platform belajar bahasa Arab dengan pendekatan modern dan bernuansa Islami.</p>
+            <img src="File/logo.png" alt="Tampilan Belajar Arab Online">
+            <br>
+            <a class="button" href="#">Lihat Platform</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><i class="fas fa-star-and-crescent"></i> © 2025 Belajar Arab Online - Semua Hak Dilindungi</p>
+    </footer>
+
+    <div class="promo-popup" id="promoPopup">
+        <div class="promo-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h3>🎉 Promo Spesial! dapatkan hanya hari ini</h3>
+            <p>Dapatkan akses GRATIS ke kelas "Bahasa Arab Dasar" selama 7 hari!</p>
+            <a href="#" class="button">Daftar Sekarang</a>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            setTimeout(() => {
+                document.getElementById("promoPopup").style.display = "flex";
+            }, 1000);
+        };
+
+        function closePopup() {
+            document.getElementById("promoPopup").style.display = "none";
+        }
+    </script>
+</body>
+</html>
